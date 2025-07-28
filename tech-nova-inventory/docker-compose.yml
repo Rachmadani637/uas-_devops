@@ -1,0 +1,29 @@
+<<<<<<< HEAD
+services:
+  auth-service:
+    build:
+      context: ./auth-service
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+
+  inventory-service:
+    build:
+      context: ./inventory-service
+      dockerfile: Dockerfile
+    ports:
+      - "5001:5001"
+=======
+version: '3'
+
+services:
+  auth-service:
+    build: ./auth-service
+    ports:
+      - "5001:5001"
+
+  inventory-service:
+    build: ./inventory-service
+    ports:
+      - "5002:5002"
+>>>>>>> 06199b2 (Menambahkan folder tech-nova-inventory tanpa sub-repo)
