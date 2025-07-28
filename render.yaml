@@ -1,0 +1,30 @@
+services:
+  - type: web
+    name: auth-service
+    env: python
+    buildCommand: ""
+    startCommand: "python app.py"
+    repo: https://github.com/Rachmadani637/uas-_devops
+    branch: main
+    rootDir: tech-nova-inventory/auth-service
+    envVars: []
+
+  - type: web
+    name: inventory-service
+    env: python
+    buildCommand: ""
+    startCommand: "python app.py"
+    repo: https://github.com/Rachmadani637/uas-_devops
+    branch: main
+    rootDir: tech-nova-inventory/inventory-service
+    envVars: []
+
+  - type: web
+    name: order-service
+    env: python
+    buildCommand: ""
+    startCommand: "python app.py"
+    repo: https://github.com/Rachmadani637/uas-_devops
+    branch: main
+    rootDir: tech-nova-inventory/order-service
+    envVars: []
