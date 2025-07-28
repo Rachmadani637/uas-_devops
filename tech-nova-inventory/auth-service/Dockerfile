@@ -1,11 +1,10 @@
-FROM python:3.10-slim
+FROM python:3.10
 
 WORKDIR /app
 
-COPY . /app
+COPY requirements.txt .
+RUN pip install -r requirements.txt
 
-RUN pip install flask
-
-EXPOSE 5001
+COPY . .
 
 CMD ["python", "app.py"]
