@@ -11,7 +11,7 @@ def home():
 def check_inventory():
     try:
         # Ganti dengan URL Render dari inventory-service kamu
-        inventory_url = "https://inventory-service-xxxxx.onrender.com"
+        inventory_url = "https://auth-service-ibv8.onrender.com"
         response = requests.get(inventory_url)
         return f"Response from Inventory Service: {response.text}"
     except Exception as e:
